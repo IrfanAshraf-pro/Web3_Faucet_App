@@ -1,10 +1,14 @@
-import Image from 'next/image'
-import styles from './page.module.css'
+import Navbar from '@/app/components/Navbar';
+import 'bootstrap/dist/css/bootstrap.css';
+import Card from './components/Card';
 
 export default function Home() {
   return (
-    <main className={styles.main}>
-      <p>Hello  there!</p>
+    <main className=''>
+      <Navbar />
+      <div className=''>
+        <Card />
+      </div>
     </main>
   )
 }
